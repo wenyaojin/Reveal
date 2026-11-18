@@ -17,6 +17,7 @@ LoRA 训练使用 FLUX.2-klein-base-4B、384 像素局部裁剪、BF16、rank 8�
 
 ## 从哪里开始
 
+- [历次实验进度与失败记录](PROGRESS.md)
 - [实验设计与执行清单](EXPERIMENTS.md)
 - [环境、复现与单图推理](RUNBOOK.md)
 
