@@ -33,3 +33,14 @@ python "$exp/hda_joint_shape.py" infer /path/to/before.jpg Nose "$POSTOP_WORKSPA
 ```
 
 项目参数可选 Eyelid、Eyebrow、Nose、FacialBones、Facelift。将脚本换为 `hda_joint_lora.py` 可调用共享 LoRA。
+
+## 两阶段强度选择
+
+先完成 `hda_joint_data.py` 和 `hda_joint_shape.py train`。第二阶段依赖 scikit-learn。
+
+```bash
+python "$exp/hda_candidate_ranker.py"
+python "$exp/hda_candidate_ranker.py" --source /path/to/before.jpg --category Nose --output "$POSTOP_WORKSPACE/ranked.png"
+```
+
+候选由同一个形变模型生成，强度为 0、0.5、1、1.5，0 表示保留原图。排序器只读取术前关键点。权重写入 `checkpoints/hda_joint_v1/candidate_ranker.npz`，测试输出和逐例误差保存在 `validation_outputs/hda_joint_v1/candidate_ranker/`。

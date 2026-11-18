@@ -1,0 +1,118 @@
+{
+  "error_columns": [
+    "strength_0",
+    "strength_0.5",
+    "strength_1",
+    "strength_1.5",
+    "fixed_from_validation",
+    "ranked",
+    "oracle"
+  ],
+  "strength_by_index": [
+    0,
+    0.5,
+    1,
+    1.5
+  ],
+  "results": {
+    "Eyelid": {
+      "n": 27,
+      "errors_percent": [
+        2.385,
+        2.325,
+        2.284,
+        2.315,
+        2.315,
+        2.315,
+        1.995
+      ],
+      "selected": {
+        "3": 27
+      },
+      "rejections": 0
+    },
+    "Eyebrow": {
+      "n": 17,
+      "errors_percent": [
+        3.99,
+        3.168,
+        2.721,
+        2.717,
+        2.717,
+        2.635,
+        2.161
+      ],
+      "selected": {
+        "3": 15,
+        "2": 2
+      },
+      "rejections": 0
+    },
+    "Nose": {
+      "n": 20,
+      "errors_percent": [
+        1.865,
+        1.745,
+        1.669,
+        1.587,
+        1.587,
+        1.591,
+        1.538
+      ],
+      "selected": {
+        "3": 15,
+        "2": 5
+      },
+      "rejections": 0
+    },
+    "FacialBones": {
+      "n": 20,
+      "errors_percent": [
+        3.607,
+        3.587,
+        3.63,
+        3.738,
+        3.738,
+        3.738,
+        3.269
+      ],
+      "selected": {
+        "3": 20
+      },
+      "rejections": 0
+    },
+    "Facelift": {
+      "n": 14,
+      "errors_percent": [
+        3.663,
+        3.538,
+        3.426,
+        3.361,
+        3.361,
+        3.361,
+        3.205
+      ],
+      "selected": {
+        "3": 14
+      },
+      "rejections": 0
+    },
+    "all": {
+      "n": 98,
+      "errors_percent": [
+        2.989,
+        2.784,
+        2.672,
+        2.676,
+        2.676,
+        2.663,
+        2.363
+      ],
+      "selected": {
+        "3": 91,
+        "2": 7
+      },
+      "rejections": 0
+    }
+  }
+}
